@@ -1,10 +1,12 @@
 class depletion_parms:
-
-    # This object holds all the parameters for depletion analysis
+    """ 
+    This object holds all the parameters for depletion analysis
+    """
 
     def __init__(self):
-
-        # depletion parameters for fuel cycle analysis
+        """
+        depletion parameters for fuel cycle analysis
+        """
 
         self.runTRANS = 'yes'
         self.nBU = 5
@@ -45,9 +47,10 @@ class depletion_parms:
 
 
 class equilibrium_cycle:
-
-    # This object holds all the information for the fuel cycle of pebblebed
-    # reactor for a specific model given the core's discitization
+    """
+    This object holds all the information for the fuel cycle of pebblebed
+    reactor for a specific model given the core's discitization
+    """
 
     def __init__(self):
 
@@ -117,9 +120,10 @@ class equilibrium_cycle:
         return self.ave_BU
 
     def compBRO(self, iteration=None):
-
-        # This method generates a new input equilibrium input deck based on the
-        # equilibrium fuel cycle just modeled
+        """
+        This method generates a new input equilibrium input deck based on the
+        equilibrium fuel cycle just modeled
+        """
 
         import mocup
         import os
@@ -313,10 +317,11 @@ class equilibrium_cycle:
 
 
 class circuit_progression:
-
-    # This object holds all the information for the fuel cycle of pebblebed
-    # reactor for a specific model given the core's discitization for a given
-    # feed fuek
+    """
+    This object holds all the information for the fuel cycle of pebblebed
+    reactor for a specific model given the core's discitization for a given
+    feed fuel
+    """
 
     def __init__(self):
 
@@ -365,8 +370,9 @@ class circuit_progression:
             self.passes[key] = circ
 
     def deplete(self):
-
-        # This method depletes the passes in sequence
+        """
+        This method depletes the passes in sequence
+        """
 
         import os
 
@@ -420,9 +426,10 @@ class circuit_progression:
                 pass
 
     def power(self):
-
-        # This method determines the power of an equilibrium fuel cycle by
-        # execiting the power method for each circuit in the fuel cycle
+        """
+        This method determines the power of an equilibrium fuel cycle by
+        execiting the power method for each circuit in the fuel cycle
+        """
 
         self.ave_power = 0
 
@@ -473,10 +480,10 @@ class circuit_progression:
         return self.ave_BU
 
     def normalized_burnup_estimate(self):
-
-        # estimate power distribution using power density in mpos files (based
-        # on concentraitons from MCNP input deck and calculated cross sections)
-
+        """
+        estimate power distribution using power density in mpos files (based
+        on concentraitons from MCNP input deck and calculated cross sections)
+        """
         heavy_density = self.makeup.heavy_mass() * 1e-6
         norm_BU = 0
 
@@ -518,11 +525,11 @@ class circuit_progression:
         return total_volume, circ_volumes, prog_volumes
 
     def search_cycle_length(self,):
-
-        # this module searches for the total cycle length that imposes a target
-        # burnup within error for a given target burnup,self.burnup , and
-        # source strength, self.neutorn_source
-
+        """
+        this module searches for the total cycle length that imposes a target
+        burnup within error for a given target burnup,self.burnup , and
+        source strength, self.neutorn_source
+        """
         import math
         import os
 
@@ -611,11 +618,12 @@ class circuit_progression:
 
 
 class circuit:
-
-    # can be thought of as a pass through the core
-    # a circuit is a collection of progressions
-    # each of these progressions has the same cycle length and the same charge
-    # fuel vector
+    """
+    can be thought of as a pass through the core
+    a circuit is a collection of progressions
+    each of these progressions has the same cycle length and the same charge
+    fuel vector
+    """
 
     def __init__(self):
         self.progressions = {}
@@ -688,10 +696,10 @@ class circuit:
         return mat * (1. / total_volume)
 
     def power(self):
-
-        # This method determines the power generate in this circuit by
-        # executing the power methods for each progression in the circuit
-
+        """
+        This method determines the power generate in this circuit by
+        executing the power methods for each progression in the circuit
+        """
         self.ave_power = 0
 
         for key in self.progressions.keys():
@@ -810,10 +818,11 @@ class progression:
             origenBEAU(self.depletions[self.cells[i]])
 
     def power(self):
-
-        # This method analyzes the depletion objects and gives the
-        # time-averaged powers for each cell as well as the total time-averaged
-        # power for the progress
+        """
+        This method analyzes the depletion objects and gives the
+        time-averaged powers for each cell as well as the total time-averaged
+        power for the progress
+        """
 
         import mocup
 
@@ -851,9 +860,9 @@ class progression:
 
 
 def gofiss(depletion):
-
-    # deplete fuel in one cell of a fuel progression
-
+    """
+    deplete fuel in one cell of a fuel progression
+    """
     import mocup
 
     for i in range(len(depletion.time)):
@@ -865,12 +874,12 @@ def gofiss(depletion):
 
 
 def origenBEAU(depletion):
-
-    # This method depletes an entire irradiation history in one fell swoop
-    #	This method should used in the case of constant flux / power AND constant cross sections or DECAY
-    # This method reads the BOL material vector from a pch file,
-    # moi_files/moi.<cell>.0.pch
-
+    """  
+    This method depletes an entire irradiation history in one fell swoop
+    This method should used in the case of constant flux / power AND constant cross sections or DECAY
+    This method reads the BOL material vector from a pch file,
+    moi_files/moi.<cell>.0.pch
+    """
     import mocup
     import math
     import os
@@ -1465,10 +1474,10 @@ class AUSCE:
 
 
 def search_comp(eq_fuel_cycle):
-
-    # this method searches for the equilibrium state for a given equilbrium
-    # fuel cycle
-
+    """
+    this method searches for the equilibrium state for a given equilbrium
+    fuel cycle
+    """
     from os import system
     import mocup
 
@@ -1513,11 +1522,11 @@ def search_comp(eq_fuel_cycle):
 
 
 def comp_convergence(depl_parms, keff_list, mat_list):
-
-    # this method checks the convergence of the the equilibrium cycle based on
-    # the number of iterations, convergences of keff and convergences of
-    # important nuclides in important cells.
-
+    """
+    this method checks the convergence of the the equilibrium cycle based on
+    the number of iterations, convergences of keff and convergences of
+    important nuclides in important cells.
+    """
     print depl_parms
     print dir(depl_parms)
     print depl_parms.import_nuclides.keys()
@@ -1542,9 +1551,9 @@ def comp_convergence(depl_parms, keff_list, mat_list):
 
 
 def search_burnup(eq_fuel, burnup=None):
-
-    # this method perturbs the burnup of the driver fuel
-
+    """
+    this method perturbs the burnup of the driver fuel
+    """
     from math import fabs
     from os import system
     import mocup
