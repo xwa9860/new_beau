@@ -1,7 +1,7 @@
 #!/bin/sh
 #SBATCH --mem_bind=verbose,local
 #SBATCH --cpu_bind=verbose,rank_ldom
-#SBATCH --job-name=katy
+#SBATCH --job-name=eq_comp_mk1
 #SBATCH --output=slurm.out
 #SBATCH --error=slurm.err
 #SBATCH --partition=x

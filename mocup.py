@@ -174,6 +174,8 @@ class Depletion:
 
 			# average by time
 			eq_mats[cell] = eq_mat*(1./total_time)
+                        eq_loc = pch_bos_loc - 'mo_files/moi.%s.eq.pch' % (cell
+                        eq_mat[cell].make_ocf(eq_loc, lib=self.library) 
 			
 		#return equilibrium material
 		return eq_mats
