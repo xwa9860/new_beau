@@ -186,7 +186,7 @@ Eq_Cycle.AUSCE.li_mats = [5,6,23,24,25,700,]
 mpo = mocup.mpo()
 mpo.populate(timestep=1)
 
-Eq_Cycle.populate(MPO-mpo, cycle_length=('LEU':5.48956E+01) neutron_source=1.7414185E+19)
+Eq_Cycle.populate(MPO=mpo, cycle_length={'LEU':5.48956E+01}, neutron_source=1.7414185E+19)
 Eq_Cycle.deplete()
 Eq_Cycle.compBRO()
 
