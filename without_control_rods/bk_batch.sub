@@ -1,0 +1,18 @@
+#!/bin/sh
+#SBATCH --job-name=noControlRods
+#SBATCH --output=noControlRods.log
+#SBATCH --error=noControlRods.serr
+#SBATCH --partition=savio
+#SBATCH --time=999:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+# QoS:
+#SBATCH --qos nuclear_normal
+#
+# Account:
+#SBATCH -A co_nuclear
+##SBATCH --account=ac_nuclear
+
+mcnp5_151.mpi i=Mark1 o=outp_Mark1 mc=mcta_mark1 srctp=source >> Mark1log
+
+mcnp5_151.mpi i=inp o=outp_inp mc=mcta_inp srctp=source >> inplog

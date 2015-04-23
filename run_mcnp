@@ -1,0 +1,12 @@
+#!/bin/sh
+#SBATCH --mem_bind=verbose,local
+#SBATCH --cpu_bind=verbose,rank_ldom
+#SBATCH --job-name=eq_comp
+#SBATCH --output=slurm_mcnp.out
+#SBATCH --error=slurm_mcnp.err
+#SBATCH --partition=x
+#SBATCH --time=100:00:00
+#SBATCH --cpus-per-task=6
+#SBATCH --ntasks=8
+
+srun mcnp5.mpi i=inp1 o=outp1 mc=mcta1 srctp=source >> mcnplog

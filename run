@@ -1,11 +1,11 @@
 #!/bin/sh
 #SBATCH --mem_bind=verbose,local
 #SBATCH --cpu_bind=verbose,rank_ldom
-#SBATCH --job-name=eq_comp_mk1
+#SBATCH --job-name=mk1_eq_comp_beau
 #SBATCH --output=slurm.out
 #SBATCH --error=slurm.err
 #SBATCH --partition=x
-#SBATCH --time=100:00:00
+#SBATCH --time=10:00:00
 #SBATCH --cpus-per-task=6
 #SBATCH --ntasks=8
 

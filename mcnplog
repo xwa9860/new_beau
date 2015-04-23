@@ -1,0 +1,702 @@
+ mcnp     ver=5.mpi, ld=01032013  01/08/14 07:46:20                   
+ outp1 already exists.  outp2 is created instead.
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 1040 s  2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1041 s  2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1042 s  2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1043 s -2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1044 s -2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1045 s -2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1050 s   0          2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1051 s   0          2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1052 s   0          2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1053 s   0         -2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1054 s   0         -2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1055 s   0         -2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1060 s   0           0          2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1061 s   0           0          2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1062 s   0           0          2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1063 s   0           0         -2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1064 s   0           0         -2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1065 s   0           0         -2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1140 s  2.26291e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ additional error messages on file outp2
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ runtpe already exists.  runtpf is created instead.
+ runtpf already exists.  runtpg is created instead.
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file runtpg   nps =           0   coll =                0
+
+ source distribution written to file source        cycle=     0
+ xact   is done
+
+ cp0 =  12.49
+ master starting       7 tasks with       1 threads each  01/08/14 07:58:49 
+ master sending static commons...
+ master sending dynamic commons...
+ master sending cross section data...
+ master completed initialization broadcasts.
+ master set rendezvous nps =         200    01/08/14 07:58:52 
+ master set rendezvous nps =       39975    01/08/14 07:58:54 
+
+ comment.
+ comment. entropy of the fission source distribution will be computed
+ comment.
+ comment. the mesh for source entropy is based on the site coordinates
+ comment.   using 12 x 12 x 12 =  1728  mesh cells
+ comment.
+ comment.     Xmin= -1.4661E+02     Xmax=  1.4670E+02
+ comment.     Ymin= -1.4686E+02     Ymax=  1.4694E+02
+ comment.     Zmin= -6.4142E+01     Zmax=  6.7644E+02
+ comment.
+ comment. the mesh will be automatically expanded if necessary to
+ comment.   encompass the entire fission source distribution
+ comment.
+
+
+ cycle    k(col)       ctm   entropy    active     k(col)    std dev        fom
+     1   0.99642     12.45  8.54E+00
+ master set rendezvous nps =       79792    01/08/14 08:00:51 
+     2   1.00243     25.06  8.55E+00
+ master set rendezvous nps =      119808    01/08/14 08:02:54 
+     3   0.99426     37.70  8.55E+00
+ master set rendezvous nps =      159565    01/08/14 08:04:57 
+     4   0.99808     50.29  8.55E+00
+ master set rendezvous nps =      199760    01/08/14 08:07:00 
+     5   0.99948     62.99  8.54E+00
+ master set rendezvous nps =      239842    01/08/14 08:09:04 
+     6   1.00538     75.70  8.55E+00
+ master set rendezvous nps =      279930    01/08/14 08:11:08 
+     7   1.00178     88.33  8.55E+00
+ master set rendezvous nps =      319687    01/08/14 08:13:12 
+     8   1.00240    100.90  8.56E+00
+ master set rendezvous nps =      359686    01/08/14 08:15:15 
+     9   0.99971    113.53  8.54E+00
+ master set rendezvous nps =      399622    01/08/14 08:17:19 
+    10   0.99734    126.04  8.55E+00
+ ********************  begin active keff cycles  *********************
+ master set rendezvous nps =      439331    01/08/14 08:19:19 
+    11   0.99941    138.61  8.54E+00
+ master set rendezvous nps =      479405    01/08/14 08:21:20 
+    12   0.99606    151.31  8.55E+00         2    0.99773    0.00168      13961
+ master set rendezvous nps =      519087    01/08/14 08:23:24 
+    13   1.00886    164.09  8.55E+00         3    1.00144    0.00383       1794
+ master set rendezvous nps =      559740    01/08/14 08:25:26 
+    14   1.00028    177.23  8.55E+00         4    1.00115    0.00273       2636
+ master set rendezvous nps =      599335    01/08/14 08:27:31 
+    15   0.99851    190.08  8.55E+00         5    1.00062    0.00218       3301
+ master set rendezvous nps =      639195    01/08/14 08:29:34 
+    16   0.99591    202.98  8.56E+00         6    0.99984    0.00194       3443
+ master set rendezvous nps =      678931    01/08/14 08:31:38 
+    17   0.99900    215.89  8.55E+00         7    0.99972    0.00165       4105
+ master set rendezvous nps =      719009    01/08/14 08:33:43 
+    18   0.99722    228.88  8.56E+00         8    0.99941    0.00146       4560
+ master set rendezvous nps =      758910    01/08/14 08:35:47 
+    19   1.00230    241.77  8.56E+00         9    0.99973    0.00133       4909
+ master set rendezvous nps =      799089    01/08/14 08:37:49 
+    20   0.99182    254.75  8.56E+00        10    0.99894    0.00143       3815
+ master set rendezvous nps =      838772    01/08/14 08:39:53 
+    21   0.99999    267.58  8.56E+00        11    0.99903    0.00129       4217
+ master set rendezvous nps =      879059    01/08/14 08:41:56 
+    22   0.99706    280.57  8.56E+00        12    0.99887    0.00119       4546
+ master set rendezvous nps =      918900    01/08/14 08:44:01 
+    23   0.99631    293.43  8.56E+00        13    0.99867    0.00111       4803
+ master set rendezvous nps =      958712    01/08/14 08:46:03 
+    24   1.00006    306.33  8.56E+00        14    0.99877    0.00104       5155
+ master set rendezvous nps =      998737    01/08/14 08:48:06 
+    25   0.99700    319.26  8.55E+00        15    0.99865    0.00097       5467
+ master set rendezvous nps =     1038616    01/08/14 08:50:10 
+    26   1.00239    332.16  8.55E+00        16    0.99888    0.00094       5498
+ master set rendezvous nps =     1078796    01/08/14 08:52:13 
+    27   0.99434    345.12  8.55E+00        17    0.99862    0.00092       5364
+ master set rendezvous nps =     1118448    01/08/14 08:54:16 
+    28   1.00380    357.94  8.54E+00        18    0.99890    0.00091       5140
+ master set rendezvous nps =     1158657    01/08/14 08:56:19 
+    29   0.99303    370.95  8.54E+00        19    0.99860    0.00092       4821
+ master set rendezvous nps =     1198175    01/08/14 08:58:22 
+    30   0.99864    383.86  8.55E+00        20    0.99860    0.00087       5088
+ master set rendezvous nps =     1238548    01/08/14 09:00:25 
+    31   1.00272    396.89  8.54E+00        21    0.99879    0.00085       5071
+ master set rendezvous nps =     1278821    01/08/14 09:02:29 
+    32   0.99460    409.88  8.54E+00        22    0.99860    0.00083       5044
+ master set rendezvous nps =     1318646    01/08/14 09:04:33 
+    33   1.00599    422.80  8.54E+00        23    0.99892    0.00086       4550
+ master set rendezvous nps =     1359168    01/08/14 09:06:37 
+    34   0.99932    435.89  8.54E+00        24    0.99894    0.00082       4752
+ master set rendezvous nps =     1398999    01/08/14 09:08:42 
+    35   1.00370    448.75  8.55E+00        25    0.99913    0.00081       4689
+ master set rendezvous nps =     1439055    01/08/14 09:10:45 
+    36   1.00689    461.68  8.54E+00        26    0.99943    0.00084       4264
+ master set rendezvous nps =     1479017    01/08/14 09:12:48 
+    37   0.99791    474.69  8.55E+00        27    0.99937    0.00081       4411
+ master set rendezvous nps =     1518600    01/08/14 09:14:50 
+    38   1.00236    487.62  8.55E+00        28    0.99948    0.00078       4497
+ master set rendezvous nps =     1558644    01/08/14 09:16:53 
+    39   1.00447    500.65  8.55E+00        29    0.99965    0.00078       4434
+ master set rendezvous nps =     1598802    01/08/14 09:18:56 
+    40   1.00220    513.75  8.55E+00        30    0.99974    0.00075       4532
+ master set rendezvous nps =     1638780    01/08/14 09:20:59 
+    41   1.00682    526.76  8.54E+00        31    0.99997    0.00076       4271
+ master set rendezvous nps =     1678960    01/08/14 09:23:02 
+    42   1.00531    539.87  8.55E+00        32    1.00013    0.00076       4200
+ master set rendezvous nps =     1718895    01/08/14 09:25:06 
+    43   0.99787    552.88  8.54E+00        33    1.00006    0.00074       4296
+ master set rendezvous nps =     1758696    01/08/14 09:27:10 
+    44   1.00229    565.80  8.55E+00        34    1.00013    0.00072       4395
+ master set rendezvous nps =     1798965    01/08/14 09:29:12 
+    45   1.00537    578.81  8.55E+00        35    1.00028    0.00071       4329
+ master set rendezvous nps =     1839122    01/08/14 09:31:18 
+    46   1.00154    591.85  8.54E+00        36    1.00031    0.00070       4445
+ master set rendezvous nps =     1878885    01/08/14 09:33:23 
+    47   1.00148    604.73  8.55E+00        37    1.00035    0.00068       4563
+ master set rendezvous nps =     1918959    01/08/14 09:35:27 
+    48   0.99511    617.70  8.55E+00        38    1.00021    0.00067       4492
+ master set rendezvous nps =     1958629    01/08/14 09:37:32 
+    49   1.00119    630.50  8.56E+00        39    1.00023    0.00066       4608
+ master set rendezvous nps =     1998842    01/08/14 09:39:35 
+    50   1.00668    643.46  8.55E+00        40    1.00039    0.00066       4448
+ master set rendezvous nps =     2039040    01/08/14 09:41:38 
+    51   1.00547    656.47  8.55E+00        41    1.00052    0.00065       4400
+ master set rendezvous nps =     2078926    01/08/14 09:43:41 
+    52   1.01036    669.41  8.55E+00        42    1.00075    0.00068       3977
+ master set rendezvous nps =     2118974    01/08/14 09:45:45 
+    53   1.00123    682.35  8.56E+00        43    1.00076    0.00066       4073
+ master set rendezvous nps =     2158686    01/08/14 09:47:48 
+    54   1.00144    695.08  8.54E+00        44    1.00078    0.00065       4169
+ master set rendezvous nps =     2198820    01/08/14 09:49:49 
+    55   1.00608    707.85  8.54E+00        45    1.00090    0.00065       4127
+ master set rendezvous nps =     2238999    01/08/14 09:51:53 
+    56   1.00795    720.88  8.54E+00        46    1.00105    0.00065       3986
+ master set rendezvous nps =     2279169    01/08/14 09:53:56 
+    57   1.00656    734.54  8.55E+00        47    1.00117    0.00065       3937
+ master set rendezvous nps =     2319062    01/08/14 09:56:05 
+    58   1.00153    748.10  8.54E+00        48    1.00117    0.00063       4018
+ master set rendezvous nps =     2358907    01/08/14 09:58:10 
+    59   0.99529    761.51  8.55E+00        49    1.00105    0.00063       3951
+ master set rendezvous nps =     2398758    01/08/14 10:00:13 
+    60   0.99633    774.87  8.55E+00        50    1.00096    0.00063       3938
+ master set rendezvous nps =     2438780    01/08/14 10:02:16 
+    61   1.00745    788.19  8.55E+00        51    1.00109    0.00063       3852
+ master set rendezvous nps =     2479324    01/08/14 10:04:23 
+    62   1.00591    801.69  8.55E+00        52    1.00118    0.00062       3840
+ master set rendezvous nps =     2519471    01/08/14 10:06:32 
+    63   0.99678    815.00  8.55E+00        53    1.00110    0.00062       3841
+ master set rendezvous nps =     2558947    01/08/14 10:08:39 
+    64   1.00371    828.12  8.55E+00        54    1.00115    0.00061       3890
+ master set rendezvous nps =     2599132    01/08/14 10:10:45 
+    65   1.00735    841.53  8.56E+00        55    1.00126    0.00061       3825
+ master set rendezvous nps =     2639153    01/08/14 10:12:53 
+    66   0.99529    854.81  8.55E+00        56    1.00115    0.00060       3772
+ master set rendezvous nps =     2678621    01/08/14 10:15:01 
+    67   0.99919    867.89  8.56E+00        57    1.00112    0.00059       3827
+ master set rendezvous nps =     2718824    01/08/14 10:17:06 
+    68   1.00543    881.21  8.56E+00        58    1.00119    0.00059       3832
+ master set rendezvous nps =     2759184    01/08/14 10:19:13 
+    69   1.00233    894.62  8.55E+00        59    1.00121    0.00058       3893
+ master set rendezvous nps =     2799010    01/08/14 10:21:22 
+    70   1.00124    907.86  8.54E+00        60    1.00121    0.00057       3959
+ master set rendezvous nps =     2838915    01/08/14 10:23:30 
+    71   0.99435    921.11  8.55E+00        61    1.00110    0.00057       3868
+ master set rendezvous nps =     2878834    01/08/14 10:25:36 
+    72   1.00821    934.40  8.56E+00        62    1.00121    0.00057       3775
+ master set rendezvous nps =     2919509    01/08/14 10:27:43 
+    73   0.99217    947.85  8.55E+00        63    1.00107    0.00058       3600
+ master set rendezvous nps =     2958792    01/08/14 10:29:51 
+    74   0.99687    960.87  8.55E+00        64    1.00100    0.00058       3610
+ master set rendezvous nps =     2998815    01/08/14 10:31:55 
+    75   1.00447    974.16  8.55E+00        65    1.00106    0.00057       3635
+ master set rendezvous nps =     3039164    01/08/14 10:34:03 
+    76   1.00244    987.56  8.54E+00        66    1.00108    0.00056       3685
+ master set rendezvous nps =     3079050    01/08/14 10:36:11 
+    77   1.00126   1000.83  8.56E+00        67    1.00108    0.00055       3741
+ master set rendezvous nps =     3118912    01/08/14 10:38:18 
+    78   1.00012   1014.05  8.55E+00        68    1.00107    0.00055       3794
+ master set rendezvous nps =     3158769    01/08/14 10:40:25 
+    79   0.99778   1027.32  8.56E+00        69    1.00102    0.00054       3820
+ master set rendezvous nps =     3198672    01/08/14 10:42:32 
+    80   0.99574   1040.54  8.55E+00        70    1.00094    0.00054       3798
+ master set rendezvous nps =     3238679    01/08/14 10:44:37 
+    81   1.00226   1053.84  8.56E+00        71    1.00096    0.00053       3848
+ master set rendezvous nps =     3278882    01/08/14 10:46:45 
+    82   1.00382   1067.19  8.56E+00        72    1.00100    0.00052       3879
+ master set rendezvous nps =     3318947    01/08/14 10:48:54 
+    83   1.00737   1080.49  8.55E+00        73    1.00109    0.00052       3825
+ master set rendezvous nps =     3359252    01/08/14 10:51:00 
+    84   0.99852   1093.87  8.55E+00        74    1.00105    0.00052       3859
+ master set rendezvous nps =     3398827    01/08/14 10:53:09 
+    85   0.98919   1106.98  8.55E+00        75    1.00090    0.00053       3568
+ master set rendezvous nps =     3438494    01/08/14 10:55:14 
+    86   0.99512   1120.16  8.56E+00        76    1.00082    0.00053       3542
+ master set rendezvous nps =     3478729    01/08/14 10:57:20 
+    87   0.99748   1133.47  8.55E+00        77    1.00078    0.00053       3564
+ master set rendezvous nps =     3518885    01/08/14 10:59:29 
+    88   0.99685   1146.80  8.55E+00        78    1.00073    0.00052       3576
+ master set rendezvous nps =     3558994    01/08/14 11:01:36 
+    89   1.00168   1160.14  8.56E+00        79    1.00074    0.00052       3620
+ master set rendezvous nps =     3599206    01/08/14 11:03:44 
+    90   0.99843   1173.47  8.56E+00        80    1.00071    0.00051       3654
+ master set rendezvous nps =     3639059    01/08/14 11:05:50 
+    91   0.99510   1186.68  8.56E+00        81    1.00064    0.00051       3631
+ master set rendezvous nps =     3678889    01/08/14 11:07:57 
+    92   0.98821   1199.85  8.56E+00        82    1.00049    0.00053       3370
+ master set rendezvous nps =     3718565    01/08/14 11:10:03 
+    93   0.99897   1213.00  8.56E+00        83    1.00047    0.00052       3407
+ master set rendezvous nps =     3759025    01/08/14 11:12:08 
+    94   0.99770   1226.40  8.56E+00        84    1.00044    0.00051       3433
+ master set rendezvous nps =     3799000    01/08/14 11:14:17 
+    95   1.00215   1239.68  8.56E+00        85    1.00046    0.00051       3468
+ master set rendezvous nps =     3839259    01/08/14 11:16:24 
+    96   0.99916   1253.07  8.56E+00        86    1.00044    0.00050       3505
+ master set rendezvous nps =     3879204    01/08/14 11:18:33 
+    97   0.99753   1266.30  8.56E+00        87    1.00041    0.00050       3530
+ master set rendezvous nps =     3919314    01/08/14 11:20:39 
+    98   0.99764   1279.62  8.56E+00        88    1.00038    0.00049       3556
+ master set rendezvous nps =     3959107    01/08/14 11:22:46 
+    99   1.00170   1292.84  8.55E+00        89    1.00039    0.00049       3593
+ master set rendezvous nps =     3999194    01/08/14 11:24:53 
+   100   1.00070   1306.13  8.56E+00        90    1.00040    0.00048       3633
+ master set rendezvous nps =     4039027    01/08/14 11:27:00 
+   101   0.99995   1319.29  8.55E+00        91    1.00039    0.00048       3673
+ master set rendezvous nps =     4079067    01/08/14 11:29:05 
+   102   1.00037   1332.48  8.55E+00        92    1.00039    0.00047       3714
+ master set rendezvous nps =     4119173    01/08/14 11:31:08 
+   103   1.00152   1345.71  8.55E+00        93    1.00040    0.00047       3752
+ master set rendezvous nps =     4159334    01/08/14 11:33:13 
+   104   0.99377   1358.93  8.56E+00        94    1.00033    0.00047       3706
+ master set rendezvous nps =     4198879    01/08/14 11:35:17 
+   105   1.00504   1371.91  8.56E+00        95    1.00038    0.00047       3704
+ master set rendezvous nps =     4239400    01/08/14 11:37:19 
+   106   1.00412   1385.22  8.56E+00        96    1.00042    0.00046       3716
+ master set rendezvous nps =     4279290    01/08/14 11:39:24 
+   107   0.99616   1398.31  8.55E+00        97    1.00038    0.00046       3721
+ master set rendezvous nps =     4318906    01/08/14 11:41:28 
+   108   0.99288   1411.40  8.55E+00        98    1.00030    0.00046       3656
+ master set rendezvous nps =     4358667    01/08/14 11:43:31 
+   109   0.99974   1424.48  8.56E+00        99    1.00030    0.00046       3693
+ master set rendezvous nps =     4399072    01/08/14 11:45:35 
+   110   0.99743   1437.79  8.56E+00       100    1.00027    0.00045       3715
+
+ source distribution written to file source        cycle=   110
+ run terminated when     110 kcode cycles were done.
+ comment.
+ comment. Average fission-source entropy for the last half of cycles:
+ comment.      H=  8.55E+00  with population std.dev.=  5.84E-03
+ comment.
+ comment.
+ comment. Cycle    2 is the first cycle having fission-source
+ comment.   entropy within 1 std.dev. of the average
+ comment.   entropy for the last half of cycles.
+ comment.   At least this many cycles should be discarded.
+ comment.
+ comment. Source entropy convergence check passed. 
+ comment.
+
+ final k(col/abs/trk len) = 1.00053     std dev = 0.00038
+
+
+                              ctm =     1437.79   nrn =       19319846213
+ dump    2 on file runtpg   nps =     4399072   coll =        879422079
+ tally data written to file mcta1
+ mcrun  is done
+
+ mcnp     ver=5.mpi, ld=12302012  01/08/14 12:49:05                   
+          Thread Name & Version = MCNP5, 1.60
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                                                     
+
+ bad trouble in subroutine ksrctp of imcn                             
+
+ source has wrong format.                                             
+ mcnp     ver=5.mpi, ld=01032013  01/08/14 19:20:56                   
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 1040 s  2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1041 s  2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1042 s  2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1043 s -2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1044 s -2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1045 s -2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1050 s   0          2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1051 s   0          2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1052 s   0          2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1053 s   0         -2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1054 s   0         -2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1055 s   0         -2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1060 s   0           0          2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1061 s   0           0          2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1062 s   0           0          2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1063 s   0           0         -2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1064 s   0           0         -2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1065 s   0           0         -2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1140 s  2.26291e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ additional error messages on file outp1
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ runtpe already exists.  runtpf is created instead.
+ runtpf already exists.  runtpg is created instead.
+ runtpg already exists.  runtph is created instead.
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file runtph   nps =           0   coll =                0
+
+ source distribution written to file source        cycle=     0
+ xact   is done
+
+ cp0 =  11.61
+ master starting       7 tasks with       1 threads each  01/08/14 19:32:33 
+ master sending static commons...
+ master sending dynamic commons...
+ master sending cross section data...
+ master completed initialization broadcasts.
+ master set rendezvous nps =         200    01/08/14 19:32:36 
+ master set rendezvous nps =        9881    01/08/14 19:32:38 
+
+ comment.
+ comment. entropy of the fission source distribution will be computed
+ comment.
+ comment. the mesh for source entropy is based on the site coordinates
+ comment.   using  7 x  7 x  7 =   343  mesh cells
+ comment.
+ comment.     Xmin= -1.4626E+02     Xmax=  1.4572E+02
+ comment.     Ymin= -1.4674E+02     Ymax=  1.4681E+02
+ comment.     Zmin= -6.2425E+01     Zmax=  6.6619E+02
+ comment.
+ comment. the mesh will be automatically expanded if necessary to
+ comment.   encompass the entire fission source distribution
+ comment.
+
+
+ cycle    k(col)       ctm   entropy    active     k(col)    std dev        fom
+     1   1.00033      3.02  6.36E+00
+ master set rendezvous nps =       19917    01/08/14 19:33:05 
+     2   0.98515      6.01  6.34E+00
+ master set rendezvous nps =       29747    01/08/14 19:33:31 
+     3   0.99422      8.96  6.37E+00
+ master set rendezvous nps =       39781    01/08/14 19:33:58 
+     4   1.01197     12.01  6.38E+00
+ master set rendezvous nps =       49910    01/08/14 19:34:26 
+     5   0.98862     15.18  6.37E+00
+ master set rendezvous nps =       59632    01/08/14 19:34:57 
+     6   0.98873     18.23  6.35E+00
+ master set rendezvous nps =       69646    01/08/14 19:35:27 
+     7   0.98701     21.36  6.35E+00
+ master set rendezvous nps =       79588    01/08/14 19:35:58 
+     8   0.99057     24.50  6.34E+00
+ master set rendezvous nps =       89586    01/08/14 19:36:30 
+     9   0.99887     27.67  6.34E+00
+ master set rendezvous nps =       99613    01/08/14 19:37:01 
+    10   1.01745     30.85  6.35E+00
+ ********************  begin active keff cycles  *********************
+ master set rendezvous nps =      109768    01/08/14 19:37:33 
+    11   0.99353     35.92  6.35E+00
+ master set rendezvous nps =      110000    01/08/14 19:38:23 
+ master set rendezvous nps =      119499    01/08/14 19:38:25 
+    12   0.98634     40.77  6.36E+00         2    0.98994    0.00360       7645
+ master set rendezvous nps =      129419    01/08/14 19:39:10 
+    13   1.00382     45.70  6.36E+00         3    0.99457    0.00507       2588
+ master set rendezvous nps =      139564    01/08/14 19:39:58 
+    14   1.00508     50.74  6.37E+00         4    0.99719    0.00445       2529
+ master set rendezvous nps =      149517    01/08/14 19:40:46 
+    15   0.99502     55.68  6.37E+00         5    0.99676    0.00347       3320
+ master set rendezvous nps =      159381    01/08/14 19:41:33 
+    16   0.99928     60.60  6.37E+00         6    0.99718    0.00287       4070
+ master set rendezvous nps =      169428    01/08/14 19:42:20 
+    17   0.98905     65.61  6.37E+00         7    0.99602    0.00269       3957
+ master set rendezvous nps =      179312    01/08/14 19:43:07 
+    18   0.99398     70.55  6.36E+00         8    0.99576    0.00234       4562
+ master set rendezvous nps =      189317    01/08/14 19:43:55 
+    19   0.97520     75.51  6.35E+00         9    0.99348    0.00308       2332
+ master set rendezvous nps =      199124    01/08/14 19:44:42 
+    20   1.00032     80.41  6.35E+00        10    0.99416    0.00284       2478
+ master set rendezvous nps =      209426    01/08/14 19:45:28 
+    21   0.98832     85.54  6.37E+00        11    0.99363    0.00262       2629
+ master set rendezvous nps =      219336    01/08/14 19:46:17 
+    22   1.00029     90.59  6.35E+00        12    0.99419    0.00246       2744
+ master set rendezvous nps =      220000    01/08/14 19:47:05 
+ master set rendezvous nps =      229422    01/08/14 19:47:09 
+    23   0.99753     95.73  6.36E+00        13    0.99444    0.00227       2949
+ master set rendezvous nps =      239352    01/08/14 19:47:54 
+    24   0.98827    100.74  6.36E+00        14    0.99400    0.00215       3057
+ master set rendezvous nps =      249239    01/08/14 19:48:41 
+    25   1.00199    105.77  6.35E+00        15    0.99453    0.00207       3076
+ master set rendezvous nps =      259311    01/08/14 19:49:28 
+    26   0.99355    110.90  6.33E+00        16    0.99447    0.00194       3286
+ master set rendezvous nps =      269210    01/08/14 19:50:17 
+    27   1.00168    115.94  6.34E+00        17    0.99490    0.00187       3327
+ master set rendezvous nps =      279234    01/08/14 19:51:04 
+    28   0.99378    120.98  6.36E+00        18    0.99483    0.00176       3529
+ master set rendezvous nps =      289165    01/08/14 19:51:51 
+    29   0.99275    125.97  6.35E+00        19    0.99473    0.00167       3720
+ master set rendezvous nps =      299133    01/08/14 19:52:38 
+    30   0.99894    131.04  6.36E+00        20    0.99494    0.00160       3857
+ master set rendezvous nps =      309177    01/08/14 19:53:25 
+    31   0.99640    136.14  6.36E+00        21    0.99501    0.00152       4049
+ master set rendezvous nps =      319102    01/08/14 19:54:13 
+    32   1.01173    141.24  6.35E+00        22    0.99577    0.00164       3340
+ master set rendezvous nps =      329293    01/08/14 19:55:00 
+    33   1.00069    146.43  6.35E+00        23    0.99598    0.00158       3432
+ master set rendezvous nps =      330000    01/08/14 19:55:48 
+ master set rendezvous nps =      339185    01/08/14 19:55:52 
+    34   0.99876    151.45  6.34E+00        24    0.99610    0.00152       3568
+ master set rendezvous nps =      349162    01/08/14 19:56:36 
+    35   1.01194    156.53  6.36E+00        25    0.99673    0.00159       3133
+ master set rendezvous nps =      359291    01/08/14 19:57:24 
+    36   0.99401    161.65  6.34E+00        26    0.99663    0.00153       3245
+ master set rendezvous nps =      369060    01/08/14 19:58:12 
+    37   0.98828    166.62  6.33E+00        27    0.99632    0.00150       3232
+ master set rendezvous nps =      379059    01/08/14 19:58:58 
+    38   1.00653    171.73  6.33E+00        28    0.99668    0.00149       3157
+ master set rendezvous nps =      389182    01/08/14 19:59:45 
+    39   1.00190    176.89  6.35E+00        29    0.99686    0.00145       3222
+ master set rendezvous nps =      399097    01/08/14 20:00:34 
+    40   1.00191    181.97  6.36E+00        30    0.99703    0.00141       3290
+ master set rendezvous nps =      409131    01/08/14 20:01:21 
+    41   1.00895    187.15  6.35E+00        31    0.99741    0.00142       3153
+ master set rendezvous nps =      419154    01/08/14 20:02:08 
+    42   1.01364    192.26  6.36E+00        32    0.99792    0.00147       2870
+ master set rendezvous nps =      429127    01/08/14 20:02:57 
+    43   0.98184    197.30  6.36E+00        33    0.99743    0.00150       2648
+ master set rendezvous nps =      438651    01/08/14 20:03:45 
+    44   0.98926    202.10  6.35E+00        34    0.99719    0.00148       2661
+ master set rendezvous nps =      440000    01/08/14 20:04:30 
+ master set rendezvous nps =      448707    01/08/14 20:04:37 
+    45   1.00121    207.21  6.37E+00        35    0.99731    0.00144       2724
+ master set rendezvous nps =      458766    01/08/14 20:05:20 
+    46   0.98781    212.29  6.35E+00        36    0.99704    0.00142       2706
+ master set rendezvous nps =      468531    01/08/14 20:06:08 
+    47   0.98365    217.23  6.34E+00        37    0.99668    0.00143       2604
+ master set rendezvous nps =      478483    01/08/14 20:06:56 
+    48   0.99713    222.27  6.33E+00        38    0.99669    0.00139       2676
+ master set rendezvous nps =      488663    01/08/14 20:07:44 
+    49   0.99649    227.44  6.34E+00        39    0.99669    0.00136       2747
+ master set rendezvous nps =      498687    01/08/14 20:08:33 
+    50   0.99978    232.54  6.34E+00        40    0.99677    0.00132       2809
+ master set rendezvous nps =      508679    01/08/14 20:09:21 
+    51   0.99122    237.61  6.35E+00        41    0.99663    0.00130       2849
+ master set rendezvous nps =      518656    01/08/14 20:10:09 
+    52   1.00499    242.69  6.35E+00        42    0.99683    0.00128       2850
+ master set rendezvous nps =      528795    01/08/14 20:10:57 
+    53   0.99679    247.83  6.34E+00        43    0.99683    0.00125       2919
+ master set rendezvous nps =      538685    01/08/14 20:11:45 
+    54   1.00201    252.85  6.35E+00        44    0.99695    0.00123       2962
+ master set rendezvous nps =      548697    01/08/14 20:12:33 
+    55   0.99837    257.92  6.33E+00        45    0.99698    0.00120       3028
+ master set rendezvous nps =      550000    01/08/14 20:13:21 
+ master set rendezvous nps =      558651    01/08/14 20:13:28 
+    56   1.00477    262.96  6.33E+00        46    0.99715    0.00119       3035
+ master set rendezvous nps =      568691    01/08/14 20:14:10 
+    57   1.01076    268.06  6.35E+00        47    0.99744    0.00120       2922
+ master set rendezvous nps =      578723    01/08/14 20:14:58 
+    58   0.99250    273.12  6.34E+00        48    0.99733    0.00118       2962
+ master set rendezvous nps =      588531    01/08/14 20:15:47 
+    59   0.99756    278.08  6.36E+00        49    0.99734    0.00115       3026
+ master set rendezvous nps =      598548    01/08/14 20:16:34 
+    60   0.99828    283.15  6.35E+00        50    0.99736    0.00113       3088
+ master set rendezvous nps =      608544    01/08/14 20:17:23 
+    61   0.99129    288.18  6.34E+00        51    0.99724    0.00111       3115
+ master set rendezvous nps =      618506    01/08/14 20:18:11 
+    62   0.99921    293.23  6.35E+00        52    0.99728    0.00109       3173
+ master set rendezvous nps =      628550    01/08/14 20:18:59 
+    63   1.00082    298.32  6.35E+00        53    0.99734    0.00107       3223
+ master set rendezvous nps =      638539    01/08/14 20:19:48 
+    64   1.01244    303.39  6.36E+00        54    0.99762    0.00109       3070
+ master set rendezvous nps =      648579    01/08/14 20:20:36 
+    65   1.01462    308.53  6.35E+00        55    0.99793    0.00111       2889
+ master set rendezvous nps =      658636    01/08/14 20:21:25 
+    66   0.98461    313.58  6.37E+00        56    0.99769    0.00112       2808
+ master set rendezvous nps =      660000    01/08/14 20:22:12 
+ master set rendezvous nps =      668351    01/08/14 20:22:20 
+    67   1.01247    318.56  6.34E+00        57    0.99795    0.00113       2711
+ master set rendezvous nps =      678585    01/08/14 20:22:59 
+    68   1.00989    323.79  6.36E+00        58    0.99816    0.00113       2667
+ master set rendezvous nps =      688558    01/08/14 20:23:49 
+    69   1.00847    328.87  6.35E+00        59    0.99833    0.00112       2649
+ master set rendezvous nps =      698563    01/08/14 20:24:37 
+    70   0.99458    334.00  6.36E+00        60    0.99827    0.00111       2685
+ master set rendezvous nps =      708330    01/08/14 20:25:24 
+    71   0.98240    338.98  6.36E+00        61    0.99801    0.00112       2582
+ master set rendezvous nps =      718220    01/08/14 20:26:11 
+    72   1.00429    344.05  6.37E+00        62    0.99811    0.00111       2603
+ master set rendezvous nps =      728386    01/08/14 20:26:58 
+    73   0.99244    349.21  6.34E+00        63    0.99802    0.00109       2627
+ master set rendezvous nps =      738241    01/08/14 20:27:45 
+    74   0.99268    354.23  6.35E+00        64    0.99794    0.00108       2653
+ master set rendezvous nps =      748259    01/08/14 20:28:32 
+    75   1.00975    359.38  6.34E+00        65    0.99812    0.00108       2618
+ master set rendezvous nps =      758419    01/08/14 20:29:20 
+    76   0.98823    364.53  6.36E+00        66    0.99797    0.00107       2605
+ master set rendezvous nps =      768179    01/08/14 20:30:08 
+    77   0.99433    369.53  6.39E+00        67    0.99792    0.00106       2639
+ master set rendezvous nps =      770000    01/08/14 20:30:56 
+ master set rendezvous nps =      778285    01/08/14 20:31:06 
+    78   0.99403    374.70  6.37E+00        68    0.99786    0.00104       2669
+ master set rendezvous nps =      788313    01/08/14 20:31:45 
+    79   0.99787    379.82  6.36E+00        69    0.99786    0.00103       2709
+ master set rendezvous nps =      798349    01/08/14 20:32:33 
+    80   0.99550    384.97  6.34E+00        70    0.99783    0.00101       2745
+ master set rendezvous nps =      808341    01/08/14 20:33:20 
+    81   0.99749    390.09  6.36E+00        71    0.99782    0.00100       2784
+ master set rendezvous nps =      818335    01/08/14 20:34:08 
+    82   1.01007    395.22  6.37E+00        72    0.99799    0.00100       2742
+ master set rendezvous nps =      828435    01/08/14 20:34:55 
+    83   0.98436    400.37  6.36E+00        73    0.99781    0.00100       2682
+ master set rendezvous nps =      838213    01/08/14 20:35:44 
+    84   1.00043    405.39  6.37E+00        74    0.99784    0.00099       2717
+ master set rendezvous nps =      848398    01/08/14 20:36:31 
+    85   0.99926    410.57  6.38E+00        75    0.99786    0.00098       2752
+ master set rendezvous nps =      858376    01/08/14 20:37:18 
+    86   1.00198    415.64  6.37E+00        76    0.99791    0.00096       2781
+ master set rendezvous nps =      868502    01/08/14 20:38:05 
+    87   1.02361    420.83  6.36E+00        77    0.99825    0.00101       2510
+ master set rendezvous nps =      878753    01/08/14 20:38:53 
+    88   1.00044    426.06  6.38E+00        78    0.99828    0.00100       2540
+ master set rendezvous nps =      880000    01/08/14 20:39:42 
+ master set rendezvous nps =      888506    01/08/14 20:39:49 
+    89   0.99338    431.01  6.36E+00        79    0.99821    0.00099       2564
+ master set rendezvous nps =      898450    01/08/14 20:40:28 
+    90   1.00256    436.09  6.36E+00        80    0.99827    0.00097       2589
+ master set rendezvous nps =      908544    01/08/14 20:41:16 
+    91   0.99886    441.22  6.34E+00        81    0.99828    0.00096       2621
+ master set rendezvous nps =      918521    01/08/14 20:42:04 
+    92   1.01335    446.36  6.34E+00        82    0.99846    0.00097       2559
+ master set rendezvous nps =      928637    01/08/14 20:42:52 
+    93   0.99143    451.53  6.35E+00        83    0.99837    0.00096       2569
+ master set rendezvous nps =      938424    01/08/14 20:43:40 
+    94   1.00777    456.52  6.36E+00        84    0.99849    0.00096       2566
+ master set rendezvous nps =      948579    01/08/14 20:44:26 
+    95   1.00936    461.70  6.36E+00        85    0.99861    0.00095       2550
+ master set rendezvous nps =      958514    01/08/14 20:45:14 
+    96   0.99606    466.84  6.34E+00        86    0.99858    0.00094       2577
+ master set rendezvous nps =      968307    01/08/14 20:46:02 
+    97   0.99858    471.93  6.34E+00        87    0.99858    0.00093       2607
+ master set rendezvous nps =      978331    01/08/14 20:46:48 
+    98   1.00248    477.15  6.35E+00        88    0.99863    0.00092       2631
+ master set rendezvous nps =      988319    01/08/14 20:47:36 
+    99   1.00101    482.34  6.34E+00        89    0.99866    0.00091       2658
+ master set rendezvous nps =      990000    01/08/14 20:48:23 
+ master set rendezvous nps =      998336    01/08/14 20:48:32 
+   100   1.00025    487.55  6.36E+00        90    0.99867    0.00090       2687
+ master set rendezvous nps =     1008297    01/08/14 20:49:12 
+   101   1.00098    492.72  6.35E+00        91    0.99870    0.00089       2714
+ master set rendezvous nps =     1018285    01/08/14 20:50:00 
+   102   1.01067    497.92  6.34E+00        92    0.99883    0.00089       2686
+ master set rendezvous nps =     1028482    01/08/14 20:50:47 
+   103   1.00716    503.22  6.33E+00        93    0.99892    0.00089       2687
+ master set rendezvous nps =     1038422    01/08/14 20:51:36 
+   104   0.98823    508.35  6.35E+00        94    0.99880    0.00088       2670
+ master set rendezvous nps =     1048242    01/08/14 20:52:23 
+   105   0.99978    513.45  6.36E+00        95    0.99881    0.00088       2699
+ master set rendezvous nps =     1058385    01/08/14 20:53:09 
+   106   1.01170    518.73  6.36E+00        96    0.99895    0.00088       2663
+ master set rendezvous nps =     1068566    01/08/14 20:53:57 
+   107   1.00010    524.01  6.36E+00        97    0.99896    0.00087       2689
+ master set rendezvous nps =     1078477    01/08/14 20:54:45 
+   108   0.99530    529.13  6.36E+00        98    0.99892    0.00086       2712
+ master set rendezvous nps =     1088493    01/08/14 20:55:32 
+   109   1.00164    534.36  6.35E+00        99    0.99895    0.00085       2736
+ master set rendezvous nps =     1098568    01/08/14 20:56:19 
+   110   0.99013    539.56  6.35E+00       100    0.99886    0.00085       2733
+
+ source distribution written to file source        cycle=   110
+ run terminated when     110 kcode cycles were done.
+ comment.
+ comment. Average fission-source entropy for the last half of cycles:
+ comment.      H=  6.35E+00  with population std.dev.=  1.20E-02
+ comment.
+ comment.
+ comment. Cycle    1 is the first cycle having fission-source
+ comment.   entropy within 1 std.dev. of the average
+ comment.   entropy for the last half of cycles.
+ comment.   At least this many cycles should be discarded.
+ comment.
+ comment. Source entropy convergence check passed. 
+ comment.
+
+ final k(col/abs/trk len) = 0.99771     std dev = 0.00073
+
+
+                              ctm =      539.56   nrn =        4668762466
+ dump    2 on file runtph   nps =     1098568   coll =        205655417
+ mcta1 already exists.  mcta2 is created instead.
+ tally data written to file mcta2
+ mcrun  is done
+
+ mcnp     ver=5.mpi, ld=07312014  04/21/15 10:49:38                   
+
+ bad trouble in subroutine exemes of mcnp                             
+
+ input file inp does not exist.                                       
+ mcnp     ver=5.mpi, ld=07312014  04/21/15 10:51:38                   
+ outp1 already exists.  outp2 is created instead.
+          Thread Name & Version = MCNP5, 1.60
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                                                     
+
+ bad trouble in subroutine ksrctp of imcn                             
+
+ source has wrong format.                                             

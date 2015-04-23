@@ -1,0 +1,20 @@
+--- inp1	2015-04-16 19:16:26.322251000 -0700
++++ without_control_rods/inp	2015-04-18 10:23:04.529250000 -0700
+@@ -9,11 +9,16 @@
+ c      Kernel Diameter (um):         400.0 
+ c      Ave Density (g/cc):           1.745
+ c sturcture of the file:
+-c Cells
++c Cells
++c    Triso particles
++c    Pebbles
+ c Surfaces
++c Data (material)
++c Tally
+ c ------------------------------------------------------------------------------
+ c Cells
+ c ------------------------------------------------------------------------------
++c Triso particles
+ c
+ c Depletion Zones 11
+ c
