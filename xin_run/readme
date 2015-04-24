@@ -1,0 +1,4 @@
+inp file is the input file for BEAU, with intermediate fuel composition, keff is about 1.2
+
+mark1 file is the input file for mcnp as a full core model for Mark1 design, with equilibrium material composition, keff is almost 1
+
