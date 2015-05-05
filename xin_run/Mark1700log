@@ -1,0 +1,79 @@
+ mcnp     ver=5.mpi, ld=11172014  05/05/15 14:04:42                   
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 1040 s  2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1041 s  2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1042 s  2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1043 s -2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1044 s -2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1045 s -2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1050 s   0          2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1051 s   0          2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1052 s   0          2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1053 s   0         -2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1054 s   0         -2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1055 s   0         -2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1060 s   0           0          2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1061 s   0           0          2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1062 s   0           0          2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1063 s   0           0         -2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1064 s   0           0         -2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1065 s   0           0         -2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1140 s  2.26291e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ additional error messages on file outp_700
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file mk1_700.r   nps =           0   coll =                0
+
+ source distribution written to file source        cycle=     0
+ xact   is done
+
+ cp0 =   0.61
+
+ comment.
+ comment. entropy of the fission source distribution will be computed
+ comment.
+ comment. the mesh for source entropy is based on the site coordinates
+ comment.   using  7 x  7 x  7 =   343  mesh cells
+ comment.
+ comment.     Xmin= -1.4660E+02     Xmax=  1.4659E+02
+ comment.     Ymin= -1.4610E+02     Ymax=  1.4549E+02
+ comment.     Zmin= -6.0763E+01     Zmax=  6.5927E+02
+ comment.
+ comment. the mesh will be automatically expanded if necessary to
+ comment.   encompass the entire fission source distribution
+ comment.
+
+
+ cycle    k(col)       ctm   entropy    active     k(col)    std dev        fom
+     1   1.00903      0.87  6.32E+00
+     2   0.99370      1.74  6.34E+00
+     3   1.01233      2.59  6.33E+00

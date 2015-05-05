@@ -2,3 +2,6 @@ inp file is the input file for BEAU, with intermediate fuel composition, keff is
 
 mark1 file is the input file for mcnp as a full core model for Mark1 design, with equilibrium material composition, keff is almost 1
 
+May 5, 2015
+mk1_700 file is Mark1 file with coolant temperature changed from 650 to 700 degree celsius(m24 to m25)
+mk1_600 file is Mark1 file with m24 changed to 600 degree celsius.
