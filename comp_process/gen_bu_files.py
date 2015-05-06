@@ -1,3 +1,6 @@
+'''
+generate bu.eq type file from Tommy's MCNP input file
+'''
 #!/usr/bin/python
 import mocup
 import re
@@ -9,7 +12,7 @@ input_file_volume = 'inp1'
 
 def get_volume(inputf):
     '''
-    search for volume of 20 zones from input file and make a list of volume vol
+    search for volume of 20 zones from MCNP input file and make a list of volume vol
     '''
     with open(inputf, 'r+') as f:
         lines = f.readlines()
@@ -42,6 +45,10 @@ def write_vol(vol, outf):
 
 
 def import_mcnpcomp(mat, comp_loc):
+    '''
+    read isotope name and fraction from comp_loc 
+    generate mat.comp as a dictionary 
+    ''' 
     mat.comp = {}
     pairs = open(comp_loc).readlines()
     for line in pairs:
