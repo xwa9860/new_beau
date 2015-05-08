@@ -1,0 +1,106 @@
+
+
+# ------------------------------------------------------------------------------
+# Update Alpha.7 2012 April 2
+# combined depletion only version of mocup with the equilibrium depletion version of mocup
+# added heavy etal functionalities
+#	heavy_mass
+#	heavy_moles
+#
+# added mpo functionalities
+#	mpo updating based on progressions and equilibrium materials, mpo.update_mat()
+#	mpo cell splitting, mpo.split()
+#	mpo cell replication, mpo.twin()
+#	placeholder for mpo addition mpo.__add__()
+#
+# integrated ORIGEN_power and ORIGEN_flux in ORIGENBRO and ORIGENPC sequences
+#
+#
+# ------------------------------------------------------------------------------
+# Update Alpha 7.1 April 10
+# added functionality to generate a MCNP5 formatted material string from a material file in the material class defintion
+#	updated by Tommy Cisneros
+#   verified by Madicken Munk
+# ------------------------------------------------------------------------------
+# Update  Alpha 7.2 April 11
+# material will now read structural materials from ORIGEN composition file
+#
+# added functionality to material object to generate a blank composition vector with all the addnux default lists from TRITON
+# addnux_1 - 17 nuclides
+# addnux_2 - 55 nuclides  some exclude because not in ORIGEN fission product XS library
+# addnux_3 - 195 nuclides - some excluded because not in ORIGEN fission product XS library
+#
+# updated how the director for ORIGEN XS Libraries is defined, its defined once in the Depletion object and propagated forward that way
+#
+# updated capability to determine list of nuclides in a ORIGEN library material.ORIGEN_nucl_list()
+#
+# updated the mcf function to put nuclides in order
+#
+# updated the material object to generated the strings for single isotopes for depletion and tallies in material.mocup_strings()
+#
+# compBRO was corrupted and I repaired it - hopefully
+#
+#  -----------------------------------------------------------------------------
+# Update Alpha 7.3 April 13
+# mcf funciton prints 6012 when mcnp library
+# added flag to write 6000 in mcnp material card
+#
+#  -----------------------------------------------------------------------------
+# Update Alpha 7.3 April 15
+#
+# updated mocup_tallies function to correct formatting in material.tally card
+#
+# -----------------------------------------------------------------------------
+# Update Alpha 8.0 May 19
+#
+# Added Capability to utilize SEREPENT as a transport module
+#	flag to run neutron transport, runMCNP, is renamed to runTRANS
+# 	There is now a flag to determine the transport module in the depletion object, transport_module
+#		This flag can be set to "serpent" or "mcnp"
+#	to create mpo object use the populate_serpent method
+# 	to creat a material card in serpent format use the scf method in material object
+#
+#	There has been a major update to the compBRO module it updates the material by swapping out the entire material card rather than specific concentrations
+#		The concentrations of structural materials (isotopes that are not fission products or actinides) are stored in the concentration vector in the mpo file until they are written in th compBRO module
+#		Consequently any comments in the material card will be erased, but mocup.py will not assume the material card stopped
+#		This seems to solve some of the issues around using a generalized set of isotopes
+#
+#	The analysis modulue that summarized the depletion results is significantly updated
+#		this module now prints depletion summaries in csv format, matlab m-file formate, and as python executables
+#
+#	Jeff Seifried noted that Am-242m is represented as teh ground state in MCNP5 for historical reasons so the nuclide correspondance table has been updated accordingly and the mcf method of the material object has been updated to write these nuclides correctly in material cards
+#
+#	The structure of mocup.py has been updated to be more modular
+#		neutron transport is run with the transportBRO module
+#		the point depletion module for 'beginning of step mode' origenBRO is renamed origenB so that the name origenBRO can be used for general point depletion
+#		the post processing is consolidating into a processingBRO module
+#		mocup and gofiss modules are updated with this new modular structure
+#
+#	These new features have been benchmarked against SERPENT's- and TRITON's- internally coupled depeltion depletion framework for a simple infinitely reflected unit cell test case
+#		kinfinity evolution, isotope concentration evolutions and several cross sections were compared
+#		kinfinity evolution, cross section evolution and actinide concentration evolutions match well
+#			there is some discrepency between the sm149 results so fission yields should be checked ans possibly updated
+#		The switched am242 nuclides in depletion with MCNP match the results with SERPENT as a driver (no switching) however these calculations predict significantly more am242m than the SERPENT or TRITON reference depletion solution
+#
+# -----------------------------------------------------------------------------
+# Update Alpha 8.1 June 4
+#
+# incorporated regular expression based neutorn transport post processing to greatly improve the speed of the population of the mpo objects
+#
+# worked on compatability with Fast BEAU
+#
+# improved depletion of multi-zone problems - the loops in origenPC and origenB were not set up for multiple zones in mocup alpha 8.0
+#
+# input and outputs are inpX and outpX there is no period so that mat lab can read serpent output files better
+#
+# the material composition is now read exclusively from ORIGEN compositions files, at the BOC an ocf is generated based on the concentration vector in the mpo object if needed
+#
+# there were some updates to the ASCII art in the csv output
+#
+# there is a flux mode has been changed this mode runs at constant flux during the depletion step, but the flux intensity is determined on the fly to impose the power, so a power definition is needed for this mode, the previous 'flux' mode is now handled by 'source' mode
+# -----------------------------------------------------------------------------
+# Update Alpha 8.1 June 6
+#
+# updated the analysis module to print the values from the output files into an object, output, and writes this output to the depletion object
+#
+

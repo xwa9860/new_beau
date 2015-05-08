@@ -1,7 +1,7 @@
 #!/bin/sh
-#SBATCH --job-name=noControlRods
-#SBATCH --output=noControlRods.log
-#SBATCH --error=noControlRods.serr
+#SBATCH --job-name=mk1
+#SBATCH --output=mk1.log
+#SBATCH --error=mk1.serr
 #SBATCH --partition=savio
 #SBATCH --time=999:00:00
 #SBATCH --nodes=1
@@ -13,6 +13,6 @@
 #SBATCH -A co_nuclear
 ##SBATCH --account=ac_nuclear
 
-mcnp5_151.mpi i=Mark1 o=outp_Mark1 mc=mcta_mark1 srctp=source >> Mark1log
-
-mcnp5_151.mpi i=inp o=outp_inp mc=mcta_inp srctp=source >> inplog
+mcnp5_151.mpi i=mk1_700 o=outp_700 mc=mcta_700 runtpe= mk1_700.r srctp=source >> Mark1700log
+mcnp5_151.mpi i=mk1_600 o=outp_600 runtpe=mk1_600.r  mc=mcta_600 srctp=source >> Mark1600log
+mcnp5_151.mpi i=Mark1 o=outp_Mark1 runtpe=mk1.r mc=mcta_mark1 srctp=source >> Mark1log
